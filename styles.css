@@ -2,16 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-html {
-  font-family: "Lato";
-}
-
 h1 {
   font-family: "Babylonica", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
   text-align: center;
+  color: #333333;
 }
 
 h2 {
@@ -21,6 +18,19 @@ h2 {
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #333333;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+  color: #333333;
+}
+p {
+  color: #333333;
 }
 
 .babylonica-regular {
@@ -91,9 +101,13 @@ h2 {
 /*BASE STYLES===============================================*/
 html {
   margin: auto;
+  font-family: "Lato";
 }
 body {
   margin: 0;
+}
+a {
+  text-decoration: none;
 }
 
 /*HEADER====================================================*/
@@ -108,8 +122,9 @@ body {
   padding: 10px;
 }
 .icons img {
-  width: 50px;
+  width: 30px;
 }
+
 /*MENU===============================================*/
 #menu__toggle {
   opacity: 0;
@@ -229,6 +244,7 @@ body {
 /* CARDS================================================= */
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .navcard {
@@ -237,6 +253,7 @@ body {
   height: 380px;
   text-align: center;
   border-radius: 10px;
+  margin: 5px;
 }
 .navcard p {
   height: 150px;
@@ -252,10 +269,58 @@ body {
   border-width: 0;
   width: 200px;
   height: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
 }
 .navcard button:hover {
-  box-shadow: #333333;
+  transform: scale(110%);
 }
+/* -------------------------------------------------- */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: auto;
+}
+.catecard {
+  width: 340px;
+  height: 160px;
+  border: solid;
+  border-color: #333333;
+  border-width: 1px;
+  border-radius: 35px;
+  display: flex;
+  margin-top: 20px;
+}
+.catecard:hover {
+  background-color: #c2262e;
+  color: #e5e5e5;
+}
+/* FIX ^^^^ hoverstate is not changing <p> elements, but is changing other text */
+.catecard img {
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+.showtext {
+  text-align: center;
+  margin: auto;
+}
+.worktext {
+  text-align: center;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+  width: 160px;
+}
+/* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
 /*FOOTER==================================================*/
 .footer img {
   width: 90px;
@@ -269,3 +334,12 @@ body {
 .footer p {
   font-weight: 300;
 }
+
+/* FIX =====================
+-catecard:hover <p> elements not changing
+-hamburger menu header
+-shows catecards need to be <a>
+-works catecards not shrinking in smaller screen (shows are though)
+-center header wordmark
+-make header wordmark <a> to index.html
+-add fill effect to buttons */
