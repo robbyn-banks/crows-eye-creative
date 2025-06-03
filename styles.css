@@ -29,9 +29,9 @@ h3 {
   text-align: center;
   color: #333333;
 }
-p {
+/* p {
   color: #333333;
-}
+} */
 
 .babylonica-regular {
   font-family: "Babylonica", cursive;
@@ -109,7 +109,11 @@ body {
 a {
   text-decoration: none;
 }
-
+.working {
+  background-color: #c2262e;
+  color: #e5e5e5;
+  padding: 5px;
+}
 /*HEADER====================================================*/
 .header {
   background-color: #333333;
@@ -294,12 +298,13 @@ a {
   border-radius: 35px;
   display: flex;
   margin-top: 20px;
+  color: #333333;
 }
 .catecard:hover {
   background-color: #c2262e;
   color: #e5e5e5;
 }
-/* FIX ^^^^ hoverstate is not changing <p> elements, but is changing other text */
+
 .catecard img {
   width: 127px;
   height: 127px;
@@ -320,6 +325,20 @@ a {
   font-size: 25px;
   width: 160px;
 }
+/* CONTACT=============================================== */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  align-items: center;
+  padding: 8%;
+}
+.aboutme {
+  max-width: 850px;
+}
+.contactinfo {
+  list-style: none;
+}
 /* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
 /*FOOTER==================================================*/
 .footer img {
@@ -336,10 +355,8 @@ a {
 }
 
 /* FIX =====================
--catecard:hover <p> elements not changing
 -hamburger menu header
 -shows catecards need to be <a>
 -works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
--make header wordmark <a> to index.html
 -add fill effect to buttons */
