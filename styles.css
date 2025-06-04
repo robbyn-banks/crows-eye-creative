@@ -335,6 +335,88 @@ a:visited {
   width: 160px;
 }
 /* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
+/* ------------------------------------------------------ */
+.shopheader {
+  margin: 0;
+}
+.shopinfo {
+  margin: auto;
+  width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.shopcontact p {
+  font-weight: 300;
+  text-align: center;
+}
+.shopdetails {
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+}
+.shopinfo button {
+  background-color: #c2262e;
+  color: #e5e5e5;
+  border-radius: 20px;
+  border-width: 0;
+  width: 200px;
+  height: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.shopinfo button:hover {
+  transform: scale(110%);
+}
+.shopitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shopcard {
+  width: 350px;
+  height: 240px;
+  border: solid;
+  border-color: #333333;
+  border-width: 1px;
+  border-radius: 35px;
+  display: flex;
+  margin: 20px;
+  color: #333333;
+}
+.shopcard img {
+  width: 185px;
+  height: 185px;
+  object-fit: cover;
+  margin: auto;
+  filter: drop-shadow(6px 4px 4px #4d4c4c);
+}
+.shoptext {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #e5e5e5;
+  width: 114px;
+  border-radius: 0 35px 35px 0;
+}
+.shoptext p {
+  margin: 0;
+}
+.shoptext ul {
+  text-align: left;
+  font-weight: 300;
+  list-style-type: circle;
+}
+.disclaimer {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+}
 /* CONTACT=============================================== */
 .contactheader {
   margin: 0;
