@@ -309,10 +309,11 @@ a:visited {
   margin-top: 20px;
   color: #333333;
 }
-.catecard:hover {
+/* ADD BACK IN WHEN WORKING LINKS =========================================
+ .catecard:hover {
   background-color: #c2262e;
   color: #e5e5e5;
-}
+} */
 
 .catecard img {
   width: 127px;
@@ -465,4 +466,5 @@ a:visited {
 -center header wordmark
 -add fill effect to buttons
 -contact page screen size for .contactinfo
--screen size adjustments for shop page */
+-screen size adjustments for shop page
+-add works and shows pages */
