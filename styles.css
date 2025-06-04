@@ -109,6 +109,15 @@ body {
 a {
   text-decoration: none;
 }
+a:link {
+  color: #4d4c4c;
+}
+a:hover {
+  color: #c2262e;
+}
+a:visited {
+  color: #8b1212;
+}
 .working {
   background-color: #c2262e;
   color: #e5e5e5;
@@ -325,21 +334,34 @@ a {
   font-size: 25px;
   width: 160px;
 }
+/* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
 /* CONTACT=============================================== */
+.contactheader {
+  margin: 0;
+}
 .contact {
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
   align-items: center;
-  padding: 8%;
+  padding: 0;
+  justify-content: space-between;
 }
 .aboutme {
-  max-width: 850px;
+  max-width: 830px;
+  padding: 30px;
+  line-height: 30px;
+  margin-left: 10px;
 }
 .contactinfo {
+  background-color: #e5e5e5;
+  max-width: 335px;
+  padding: 40px;
+  line-height: 40px;
+}
+.contactinfo ul {
   list-style: none;
 }
-/* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
 /*FOOTER==================================================*/
 .footer img {
   width: 90px;
@@ -359,4 +381,5 @@ a {
 -shows catecards need to be <a>
 -works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
--add fill effect to buttons */
+-add fill effect to buttons
+-contact page screen size for .contactinfo */
