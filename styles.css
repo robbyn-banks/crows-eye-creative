@@ -131,13 +131,23 @@ a:visited {
   align-items: center;
 }
 .header img {
-  width: 180px;
   padding: 10px;
 }
 .icons img {
   width: 30px;
 }
-
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 120px;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 480.1px) {
+  .logo {
+    width: 180px;
+    margin: auto;
+  }
+}
 /*MENU===============================================*/
 #menu__toggle {
   opacity: 0;
@@ -336,16 +346,17 @@ a:visited {
   width: 160px;
 }
 /* FIX ^^^^ cards not shrinking in smaller screen states like shows do */
-/* ------------------------------------------------------ */
+/* SHOP ================================================= */
 .shopheader {
   margin: 0;
 }
 .shopinfo {
   margin: auto;
-  width: 590px;
+  max-width: 590px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  text-align: center;
 }
 .shopcontact p {
   font-weight: 300;
@@ -389,11 +400,21 @@ a:visited {
   color: #333333;
 }
 .shopcard img {
-  width: 185px;
-  height: 185px;
   object-fit: cover;
   margin: auto;
   filter: drop-shadow(6px 4px 4px #4d4c4c);
+}
+@media screen and (max-width: 390px) {
+  .shopcard img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 390.1px) {
+  .shopcard img {
+    width: 185px;
+    height: 185px;
+  }
 }
 .shoptext {
   text-align: center;
@@ -436,14 +457,24 @@ a:visited {
   line-height: 30px;
   margin-left: 10px;
 }
+
 .contactinfo {
   background-color: #e5e5e5;
   max-width: 335px;
-  padding: 40px;
   line-height: 40px;
 }
 .contactinfo ul {
   list-style: none;
+}
+@media screen and (max-width: 360px) {
+  .contactinfo {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 360.1px) {
+  .contactinfo {
+    padding: 40px;
+  }
 }
 /*FOOTER==================================================*/
 .footer img {
@@ -465,6 +496,4 @@ a:visited {
 -works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
 -add fill effect to buttons
--contact page screen size for .contactinfo
--screen size adjustments for shop page
 -add works and shows pages */
