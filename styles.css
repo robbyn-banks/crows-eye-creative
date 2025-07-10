@@ -439,6 +439,60 @@ a:visited {
   margin: auto;
   width: 500px;
 }
+/* WORKS================================================= */
+.portfolioitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfoliocard {
+  width: 350px;
+  height: 240px;
+  border: solid;
+  border-color: #333333;
+  border-width: 1px;
+  border-radius: 35px;
+  display: flex;
+  margin: 20px;
+  color: #333333;
+}
+.portfoliocard img {
+  object-fit: contain;
+  margin: auto;
+  filter: drop-shadow(6px 4px 4px #4d4c4c);
+}
+/* FIX THIS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+.portfoliocard img:hover {
+  width: 300px;
+} */
+@media screen and (max-width: 390px) {
+  .portfoliocard img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 390.1px) {
+  .portfoliocard img {
+    width: 185px;
+    height: 185px;
+  }
+}
+.portfoliotext {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #e5e5e5;
+  width: 114px;
+  border-radius: 0 35px 35px 0;
+}
+.portfoliotext p {
+  margin: 0;
+}
+.portfoliotext ul {
+  text-align: left;
+  font-weight: 300;
+  list-style-type: circle;
+}
 /* CONTACT=============================================== */
 .contactheader {
   margin: 0;
@@ -496,4 +550,6 @@ a:visited {
 -works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
 -add fill effect to buttons
--add works and shows pages */
+-add works and shows pages
+-portfoliocard img hoverstate
+-screen resizing works on desktop but not on mobile */
