@@ -319,11 +319,11 @@ a:visited {
   margin-top: 20px;
   color: #333333;
 }
-/* ADD BACK IN WHEN WORKING LINKS =========================================
- .catecard:hover {
+
+.catecard:hover {
   background-color: #c2262e;
   color: #e5e5e5;
-} */
+}
 
 .catecard img {
   width: 127px;
@@ -546,7 +546,7 @@ a:visited {
 
 /* FIX =====================
 -hamburger menu header
--shows catecards need to be <a>
+-shows catecards need to be <a> (or dropdown?)
 -works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
 -add fill effect to buttons
