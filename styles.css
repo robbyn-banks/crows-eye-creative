@@ -461,6 +461,19 @@ a:visited {
   margin: auto;
   filter: drop-shadow(6px 4px 4px #4d4c4c);
 }
+.portfoliocard button {
+  background-color: #c2262e;
+  color: #e5e5e5;
+  border-radius: 20px;
+  border-width: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+.portfoliocard button:hover {
+  transform: scale(110%);
+}
 /* FIX THIS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 .portfoliocard img:hover {
   width: 300px;
