@@ -305,21 +305,35 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 75%;
+  width: default;
   margin: auto;
 }
-.catecard {
-  width: 340px;
-  height: 160px;
-  border: solid;
-  border-color: #333333;
-  border-width: 1px;
-  border-radius: 35px;
-  display: flex;
-  margin-top: 20px;
-  color: #333333;
+@media screen and (min-width: 390.1px) {
+  .catecard {
+    width: 340px;
+    height: 160px;
+    border: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 35px;
+    display: flex;
+    margin-top: 20px;
+    color: #333333;
+  }
 }
-
+@media screen and (max-width: 390px) {
+  .catecard {
+    width: 280px;
+    height: 160px;
+    border: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 35px;
+    display: flex;
+    margin-top: 20px;
+    color: #333333;
+  }
+}
 .catecard:hover {
   background-color: #c2262e;
   color: #e5e5e5;
@@ -560,9 +574,11 @@ a:visited {
 /* FIX =====================
 -hamburger menu header
 -shows catecards need to be <a> (or dropdown?)
--works catecards not shrinking in smaller screen (shows are though)
 -center header wordmark
+-socials icons need to stack 2x2 on mobile
 -add fill effect to buttons
 -add works and shows pages
 -portfoliocard img hoverstate
--screen resizing works on desktop but not on mobile */
+-screen resizing works on desktop but not on mobile [double check this]
+-Stickers/crochet works link to shop page, but I want link to be unterlined. Underlining all a:link results in works buttons and hamburger menu buttons also being underlined.
+*/
