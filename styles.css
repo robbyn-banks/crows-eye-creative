@@ -98,6 +98,12 @@ h3 {
   font-style: italic;
 }
 
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 /*BASE STYLES===============================================*/
 html {
   margin: auto;
@@ -146,6 +152,59 @@ a:visited {
   .logo {
     width: 180px;
     margin: auto;
+  }
+}
+/*Urband Disturbance====================================================*/
+.UDheader {
+  background-color: #0c0559;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.UDheader img {
+  padding: 10px;
+}
+.icons img {
+  width: 30px;
+}
+@media screen and (max-width: 480px) {
+  .UDlogo {
+    width: 300px;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 480.1px) {
+  .UDlogo {
+    width: 420px;
+    margin: auto;
+  }
+}
+.UDtext {
+  font-family: nunito, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+.UDhomepage {
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+}
+.UDhomepage img {
+  width: 350px;
+  margin: auto;
+}
+.soundcloudembed {
+  margin: auto;
+}
+@media screen and (max-width: 980px) {
+  .soundcloudembed {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 980.1px) {
+  .soundcloudembed {
+    width: 60%;
   }
 }
 /*MENU===============================================*/
