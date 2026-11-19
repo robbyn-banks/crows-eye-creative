@@ -508,11 +508,10 @@ details summary {
 }
 
 .showdetails:open > .showinfo {
-  position: absolute;
-  /* FIX positioning vvvvvvvvvvvvvvvvvvvv */
+  position: relative;
+  margin-top: -300px;
   top: 0;
   left: 0;
-  /* FIX positioning ^^^^^^^^^^^^^^^^^^^^ */
   display: flex;
   align-items: center;
   justify-content: center;
