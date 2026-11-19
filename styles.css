@@ -174,10 +174,13 @@ a:visited {
 /*Urband Disturbance====================================================*/
 .UDheader {
   background-color: #0c0559;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 120px;
+}
+.UDheader a {
+  justify-self: center;
 }
 .UDheader img {
   padding: 10px;
