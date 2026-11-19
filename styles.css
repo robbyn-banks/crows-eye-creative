@@ -827,7 +827,7 @@ body:has(.details-lightbox[open]) {
 
 .contactinfo {
   background-color: #e5e5e5;
-  max-width: 335px;
+  max-width: 425px;
   line-height: 40px;
 }
 .contactinfo ul {
@@ -862,22 +862,6 @@ body:has(.details-lightbox[open]) {
 -socials icons need to stack 2x2 on mobile
 -add fill effect to buttons
 -update transjester photos
--reorganize works categories
-  DONE
-    +Graphic
-    +Illustration
-  TO DO
-    +Fiber Arts
-    +Film & Sound [new page]
--turn portfolio items into details summary
-  DONE
-    +digital
-    +sticker
-    +traditional
-    +graphic
-    +3D
-  TO DO
-    +Crochet
-    +Costumes
+-clean out defunt pages
 -screen resizing works on desktop but not on mobile [double check this]
 */
