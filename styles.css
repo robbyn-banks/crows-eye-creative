@@ -825,11 +825,17 @@ body:has(.details-lightbox[open]) {
   padding: 0;
   justify-content: space-between;
 }
+
+.resumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 830px;
+}
 .aboutme {
   max-width: 830px;
   padding: 30px;
   line-height: 30px;
-  margin-left: 10px;
 }
 
 .contactinfo {
