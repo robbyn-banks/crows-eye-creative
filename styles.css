@@ -536,6 +536,13 @@ details summary {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.showgallery p {
+  font-size: 20px;
+  border-bottom: 1px solid #333333;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 5px;
+}
 .showgallery img {
   height: 180px;
   padding: 5px;
@@ -905,4 +912,8 @@ body:has(.details-lightbox[open]) {
 -update transjester photos
 -clean out defunct pages
 -portfoliocard resizes on mobile but details summary > portfoliocard does not
+-add pro studio works
+-add more audio/video works
+-add photography
+-add thesis pieces
 */
