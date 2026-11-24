@@ -523,6 +523,12 @@ details summary {
   margin: auto 5px;
   max-width: 187px;
 }
+.catecard:hover .shows_link {
+  color: #e5e5e5;
+}
+.shows_link:hover {
+  font-size: 17px;
+}
 .showinfotext {
   justify-content: center;
   text-align: center;
